@@ -1,0 +1,47 @@
+﻿<Window x:Class="WPF_Study.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        
+        mc:Ignorable="d"
+        Title="MainWindow" Height="500" Width="500">
+    <Grid Background="LightGray">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.5*"></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <TextBox Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="4" x:Name="process" FontSize="20" TextAlignment="Right" Foreground="#FF6B6969" ></TextBox>
+        <TextBox Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="4" x:Name="str" FontSize="48" Background="White"></TextBox>
+        <Button Grid.Row="3" Grid.Column="0" x:Name="seven" Content="7" FontSize="48" Click="bSeven_Click" Background="#FFF9F6F6"></Button>
+        <Button Grid.Row="3" Grid.Column="1" x:Name="eight" Content="8" FontSize="48" Click="bEight_Click" Background="#FFF9F6F6"></Button>
+        <Button Grid.Row="3" Grid.Column="2" x:Name="nine" Content="9" FontSize="48" Click="bNine_Click" Background="#FFF9F6F6"></Button>
+        <Button Grid.Row="4" Grid.Column="0" x:Name="four" Content="4" FontSize="48" Click="bFour_Click" Background="#FFF9F6F6"></Button>
+        <Button Grid.Row="4" Grid.Column="1" x:Name="five" Content="5" FontSize="48" Click="bFive_Click" Background="#FFF9F6F6"></Button>
+        <Button Grid.Row="4" Grid.Column="2" x:Name="six" Content="6" FontSize="48" Click="bSix_Click" Background="#FFF9F6F6"></Button>
+        <Button Grid.Row="5" Grid.Column="0" x:Name="one" Content="1" FontSize="48" Click="bOne_Click" Background="#FFF9F6F6"></Button>
+        <Button Grid.Row="5" Grid.Column="1" x:Name="two" Content="2" FontSize="48" Click="bTwo_Click" Background="#FFF9F6F6"></Button>
+        <Button Grid.Row="5" Grid.Column="2" x:Name="three" Content="3" FontSize="48" Click="bThree_Click" Background="#FFF9F6F6"></Button>
+        <Button Grid.Row="6" Grid.Column="3" x:Name="times" Content="X" FontSize="48" Click="bTimes_Click"></Button>
+        <Button Grid.Row="6" Grid.Column="0" x:Name="zero" Content="0" FontSize="48" Click="bZero_Click" Background="#FFF9F6F6"></Button>
+        <Button Grid.Row="6" Grid.Column="1" Grid.ColumnSpan="2"  x:Name="equal" Content="=" FontSize="48" Click="bEqual_Click" Background="#FF6DABFF" ></Button>
+        <Button Grid.Row="4" Grid.Column="3" x:Name="plus" Content="+" FontSize="48" Click="bPlus_Click"></Button>
+        <Button Grid.Row="2" Grid.Column="3" x:Name="clear" Content="Clear" FontSize="48" Click="bClear_Click"></Button>
+        <Button Grid.Row="5" Grid.Column="3" x:Name="minus" Content="-" FontSize="48" Click="bMinus_Click"></Button>
+        <Button Grid.Row="3" Grid.Column="3" x:Name="divide" Content="/" FontSize="48" Click="bDivide_Click"></Button>
+        <Button Grid.Row="2" Grid.Column="0" x:Name="brackets" Content="( )" FontSize="48" Click="bBracket_Click"></Button>
+        <Button Grid.Row="2" Grid.Column="1" x:Name="degree" Content="^2" FontSize="48" Click="bDegree_Click"></Button>
+        <Button Grid.Row="2" Grid.Column="2" x:Name="root" Content="√" FontSize="48" Click="bSqrt_Click"></Button>
+    </Grid>
+</Window>
